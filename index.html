@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillTracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 SkillTracker</h1>
+    <form id="skillForm">
+      <input type="text" id="skillInput" placeholder="Enter a skill or goal" required />
+      <select id="prioritySelect">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <select id="statusSelect">
+        <option value="Not Started">Not Started</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button type="submit">Add Skill</button>
+    </form>
+
+    <div class="filters">
+      <label>Filter by Status:</label>
+      <select id="filterStatus">
+        <option value="All">All</option>
+        <option value="Not Started">Not Started</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
+
+    <ul id="skillList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
